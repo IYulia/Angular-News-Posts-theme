@@ -1,0 +1,12 @@
+<section [class.dark]="theme === 'dark'">
+  <div class="container">
+    <div class="grid">
+      <div class="grid-item" *ngFor="let item of posts" [class.dark]="theme === 'dark'">
+        <h2>{{item.title}}</h2>
+        <p>{{item.body}}</p>
+        <i>{{item.tags}}</i>
+      </div>
+    </div>
+    <mat-paginator (page)="handlePageEvent($event)" [length]="total" [pageSize]="pageSize" [pageSizeOptions]="[pageSize/2, pageSize, pageSize*2.5, pageSize*15]" aria-label="Select page"></mat-paginator>
+  </div>
+</section>

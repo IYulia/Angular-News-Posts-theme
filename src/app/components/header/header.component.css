@@ -1,0 +1,28 @@
+header {
+  padding: 20px 0;
+  height: 100%;
+}
+
+:host-context(.dark) header {
+  background-color: #1a1a1a; 
+  color: white; 
+}
+
+:host-context(.light) header {
+  background-color: #d4d4d4;
+  color: black; 
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.toggle-wrap > p {
+  margin-bottom: 0;
+}

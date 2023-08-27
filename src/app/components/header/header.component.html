@@ -1,0 +1,12 @@
+<header [class.dark]="theme === 'dark'">
+  <div class="container">
+    <div class="header-inner">
+      <h1>{{app_name}}</h1>
+      <div class="toggle-wrap">
+        <p>Dark</p>
+        <mat-slide-toggle [checked]="checked" (change)="changeTheme()"> </mat-slide-toggle>
+        <p>Light</p>
+      </div>
+    </div>
+  </div>
+</header>

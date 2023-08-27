@@ -1,0 +1,16 @@
+.wrap {
+  display: grid;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #3c3c3d;
+  color: white;
+}
+
+.light {
+  background-color: #adadad;
+  color: black;
+}

@@ -1,0 +1,18 @@
+footer {
+  padding: 20px 0;
+  height: 100%;
+}
+
+:host-context(.dark) footer {
+  background-color: #1a1a1a; 
+  color: white; 
+}
+
+:host-context(.light) footer {
+  background-color: #d4d4d4;
+  color: black; 
+}
+
+footer p {
+  text-align: center;
+}
